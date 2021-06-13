@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    
+    webpack:
+        image: "local/yarn"
+        working_dir: /home/node/app
+        environment:
+        - NODE_ENV=development        
+        volumes:
+        - ./:/home/node/app
+        ports:
+        - "9000:9000"
+        command: "yarn webpack serve"

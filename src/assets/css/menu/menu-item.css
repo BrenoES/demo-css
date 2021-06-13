@@ -1,0 +1,13 @@
+.menu__item{
+    position: relative;
+}
+@media screen and (min-width: 401px) {
+    .menu__item {
+        float: left;
+    }
+}
+/* @media screen and (min-width: 901px) {
+    .menu__item {
+        float: none;
+    }
+} */

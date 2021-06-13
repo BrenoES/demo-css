@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Demo css</title>
+</head>
+
+<body class="grid grid-templates">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link menu__link--active" href="#home">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">About Us</a></li>
+                <!-- <li class="menu__item">
+                    <a class=" menu__link" href="#dropdown">
+                        Dropdown
+                    </a>
+                    <ul class="menu-dropdown menu-dropdown--open">
+                        <li class="menu-dropdown__item">Contact Us</li>
+                        <li class="menu-dropdown__item">Contact Us</li>
+                        <li class="menu-dropdown__item">Contact Us</li>
+                    </ul>
+                </li> -->
+                <li class="menu__item"><a class="menu__link" href="#clients">Our Clients</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section-images">
+            <div class="gallery">
+                <div class="gallery__content">
+                    <img onclick="openModal(event)" class="gallery__image" src="./assets/images/img_5terre.jpg"
+                        alt="Cinque Terre" width="600" height="400">
+
+                    <div class="gallery__description">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery__content">
+                    <img onclick="openModal(event)" class="gallery__image" src="./assets/images/img_forest.jpg"
+                        alt="Forest" width="600" height="400">
+
+                    <div class="gallery__description">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery__content">
+                    <img onclick="openModal(event)" class="gallery__image" src="./assets/images/img_lights.jpg"
+                        alt="Northern Lights" width="600" height="400">
+
+                    <div class="gallery__description">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery__content">
+
+                    <img onclick="openModal(event)" class="gallery__image" src="./assets/images/img_mountains.jpg"
+                        alt="Mountains" width="600" height="400">
+
+                    <div class="gallery__description">Add a description of the image here</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div style="padding:6px;">
+                <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger
+                    than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show
+                    two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
+                </p>
+                <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section>
+            <i class="material-icons">cloud</i>
+            <i class="material-icons">favorite</i>
+            <i class="material-icons">attachment</i>
+            <i class="material-icons">computer</i>
+            <i class="material-icons">traffic</i>
+        </section>
+        Footer
+    </footer>
+</body>
+
+</html>

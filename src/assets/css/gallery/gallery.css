@@ -1,0 +1,32 @@
+@import "gallery-image.css";
+@import "gallery-link.css";
+@import "gallery-description.css";
+
+.gallery{
+    padding: 0 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 401px) {
+    .gallery{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .gallery{
+        width: 25%;
+    }
+}
+.gallery__content {
+    margin: 6px 0px;
+    border: 1px solid #ccc;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+ 
+}
+
+.gallery__content:hover {
+    transform: scale(1.03);
+    border: 1px solid #777;
+}
